@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router';
 // ... other imports
 
 function App() {
   return (
-    // Update this line below!
-    <Router basename="/Auth-master">
+    // HashRouter is highly recommended for GitHub Pages
+    <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
