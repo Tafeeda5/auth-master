@@ -1,6 +1,9 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router';
-// ... other imports
+import Login from './Pages/Login';
+import Signup from './Pages/Signup';
+import Dashbord from './Pages/Dashbord';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
